@@ -1,10 +1,228 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-    <title>My Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>紡 ~建物まるごと大家族~</title>
+    <style>
+        body {
+            font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: #fdfaf6;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 2px solid #e8e0d6;
+        }
+        header h1 {
+            font-size: 3em;
+            font-weight: bold;
+            color: #8b4513;
+            margin: 0;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #8b4513;
+            font-weight: bold;
+        }
+        .main-visual {
+            background-image: url('https://via.placeholder.com/1200x500?text=建物まるごと、大家族に。');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+            font-size: 2.2em;
+            color: #8b4513;
+            margin-top: 60px;
+            margin-bottom: 40px;
+            border-bottom: 3px double #e8e0d6;
+            padding-bottom: 15px;
+        }
+        .section {
+            margin-bottom: 60px;
+        }
+        .story, .features {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+        .story-item, .feature-item {
+            flex: 1;
+            text-align: center;
+        }
+        .story-item img, .feature-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h3 {
+            font-size: 1.5em;
+            color: #a0522d;
+            margin-bottom: 15px;
+        }
+        .properties table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .properties th, .properties td {
+            border: 1px solid #e8e0d6;
+            padding: 15px;
+        }
+        .properties th {
+            background-color: #f5f0e9;
+            width: 30%;
+            text-align: left;
+        }
+        footer {
+            background-color: #e8e0d6;
+            color: #5c4033;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 60px;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Website!</h1>
-    <p>This is a simple HTML page for my GitHub Pages site.</p>
+
+    <header>
+        <h1>紡</h1>
+        <p>~ tsumugu ~</p>
+        <nav>
+            <ul>
+                <li><a href="#concept">コンセプト</a></li>
+                <li><a href="#story">家族のストーリー</a></li>
+                <li><a href="#features">建物の魅力</a></li>
+                <li><a href="#properties">物件概要</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-visual">
+            <p>建物まるごと、大家族に。</p>
+        </div>
+
+        <div class="container">
+            <section id="concept" class="section">
+                <h2>コンセプトは「紡」</h2>
+                <p>
+                    ここは、ただ住むだけの場所ではありません。<br>
+                    世代を超え、家族の形を超え、人と人とが繋がり、支え合う。<br>
+                    子育てをみんなで楽しんだり、時には親の様子をそっと見守ったり。<br>
+                    建物全体がまるで一つの大きな家族のように、日々の暮らしを豊かに紡いでいく。<br>
+                    「紡」は、そんな温かいコミュニティを育む新しい賃貸の形です。
+                </p>
+            </section>
+
+            <section id="story" class="section">
+                <h2>家族のストーリー</h2>
+                <div class="story">
+                    <div class="story-item">
+                        <img src="https://via.placeholder.com/450x300?text=Story+1" alt="親を呼び寄せ、すぐそばで見守る暮らし">
+                        <h3>親を呼び寄せ、すぐそばで見守る暮らし</h3>
+                        <p>子世帯は3階、親世帯は1階に。スープの冷めない距離で、お互いのプライバシーは守りながら、何かあればすぐに駆けつけられる安心感。週末は孫と一緒に共用の庭で野菜を育てるのが楽しみ。終活を考え始めた親にとっても、家族の温かさを感じられる毎日です。</p>
+                    </div>
+                    <div class="story-item">
+                        <img src="https://via.placeholder.com/450x300?text=Story+2" alt="世代を超えた交流が生まれる日常">
+                        <h3>世代を超えた交流が生まれる日常</h3>
+                        <p>共用キッチンから漂ういい匂いにつられて、自然と人が集まる。今日は隣の奥さんから煮物の作り方を教わった。子育てに悩んだときは、"人生の先輩"であるおじいちゃん、おばあちゃんが相談相手。ご近所付き合いが、暮らしを何倍にも豊かにしてくれます。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="features" class="section">
+                <h2>建物の魅力</h2>
+                <div class="features">
+                    <div class="feature-item">
+                        <img src="https://via.placeholder.com/300x200?text=Feature+1" alt="コミュニティキッチン">
+                        <h3>コミュニティキッチン</h3>
+                        <p>入居者なら誰でも使える広々としたキッチン。一緒に料理を作ったり、誕生日会を開いたり。食を通じた交流の拠点です。</p>
+                    </div>
+                    <div class="feature-item">
+                        <img src="https://via.placeholder.com/300x200?text=Feature+2" alt="図書スペース">
+                        <h3>図書スペース「紡ぎの書斎」</h3>
+                        <p>絵本から小説、雑誌まで。入居者が持ち寄った本を自由に閲覧できます。静かに読書を楽しんだり、勉強したりできる空間です。</p>
+                    </div>
+                    <div class="feature-item">
+                        <img src="https://via.placeholder.com/300x200?text=Feature+3" alt="屋上菜園">
+                        <h3>みんなの菜園</h3>
+                        <p>屋上には入居者共同の菜園が。季節の野菜を育て、収穫の喜びを分かち合えます。子供たちの食育の場にも。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="properties" class="section">
+                <h2>物件概要</h2>
+                <div class="properties">
+                    <table>
+                        <tr>
+                            <th>所在地</th>
+                            <td>東京都〇〇区〇〇丁目〇〇-〇〇</td>
+                        </tr>
+                        <tr>
+                            <th>交通</th>
+                            <td>JR〇〇線「〇〇駅」徒歩5分</td>
+                        </tr>
+                        <tr>
+                            <th>賃料</th>
+                            <td>1LDK: 150,000円〜 / 2LDK: 220,000円〜</td>
+                        </tr>
+                        <tr>
+                            <th>共益費</th>
+                            <td>15,000円</td>
+                        </tr>
+                        <tr>
+                            <th>構造・規模</th>
+                            <td>鉄筋コンクリート造 地上5階建</td>
+                        </tr>
+                        <tr>
+                            <th>築年月</th>
+                            <td>2025年10月</td>
+                        </tr>
+                        <tr>
+                            <th>お問い合わせ</th>
+                            <td>株式会社〇〇不動産 TEL: 03-XXXX-XXXX</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 紡. All Rights Reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
